@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P.E.P. - Clasificación</title>
+    <style>
+        :root { 
+            --azul-principal: #004696; 
+            --azul-oscuro: #002d62; 
+            --blanco: #ffffff; 
+            --gris-claro: #f4f6f9; 
+        }
+
+        * { 
+            margin: 0; 
+            padding: 0; 
+            box-sizing: border-box; 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+        }
+
+        body { 
+            background-color: var(--gris-claro); 
+            color: #333; 
+            line-height: 1.6; 
+        }
+
+        header { 
+            background-color: var(--blanco); 
+            border-bottom: 3px solid var(--azul-principal); 
+            padding: 0.8rem 5%; 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            position: sticky; 
+            top: 0; 
+            z-index: 100; 
+        }
+
+        .logo-container { 
+            display: flex; 
+            align-items: center; 
+            gap: 12px; 
+        }
+
+        .logo-img { 
+            height: 50px; 
+            width: auto; 
+            object-fit: contain; 
+        }
+
+        nav a { 
+            color: var(--azul-oscuro); 
+            text-decoration: none; 
+            margin-left: 20px; 
+            font-weight: 600; 
+        }
+
+        nav a.active { 
+            color: var(--azul-principal); 
+            border-bottom: 2px solid var(--azul-principal); 
+        }
+
+        .container { 
+            max-width: 1000px; 
+            margin: 3rem auto; 
+            padding: 0 20px; 
+            min-height: calc(100vh - 230px); 
+        }
+
+        .card { 
+            background: var(--blanco); 
+            padding: 2.5rem; 
+            border-radius: 8px; 
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05); 
+            margin-bottom: 2rem;
+            overflow-x: auto;
+        }
+
+        .card h2 { 
+            color: var(--azul-principal); 
+            margin-bottom: 1.2rem; 
+            border-bottom: 2px solid var(--gris-claro); 
+            padding-bottom: 0.5rem; 
+        }
+
+        .tabla-torneo {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+            font-size: 0.95rem;
+        }
+
+        .tabla-torneo th, .tabla-torneo td {
+            padding: 10px 12px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .tabla-torneo th {
+            background-color: var(--azul-principal);
+            color: var(--blanco);
+        }
+
+        .tabla-torneo tr:nth-child(even) {
+            background-color: var(--gris-claro);
+        }
+
+        .jugador-nombre {
+            text-align: left !important;
+            font-weight: 600;
+        }
+
+        .btn-perfil {
+            color: var(--azul-principal);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .btn-perfil:hover {
+            text-decoration: underline;
+        }
+
+        footer { 
+            text-align: center; 
+            padding: 1.5rem; 
+            background-color: var(--azul-oscuro); 
+            color: var(--blanco); 
+            font-size: 0.9rem; 
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+            <img src="logo-colegio.jpg" alt="Logo Club P.E.P." class="logo-img">
+            <h2>P.E.P.</h2>
+        </div>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="datos.html">Datos</a>
+            <a href="aperturas.html">Aperturas</a>
+            <a href="torneo.html">Torneo</a>
+            <a href="clasificacion.html" class="active">Clasificación</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        
+        <section class="card">
+            <h2>Tabla de Posiciones y Ranking - SDA</h2>
+            <table class="tabla-torneo">
+                <thead>
+                    <tr>
+                        <th>Jugador</th>
+                        <th>Elo</th>
+                        <th>V</th>
+                        <th>D</th>
+                        <th>T</th>
+                        <th>Amistosos</th>
+                        <th>Grado</th>
+                        <th>User</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="jugador-nombre">Joaquín Arias</td>
+                        <td><strong>895</strong></td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>3E</td>
+                        <td><a href="https://www.chess.com/member/haros460" target="_blank" class="btn-perfil">Perfil</a></td>
+                    </tr>
+                    <tr>
+                        <td class="jugador-nombre">Jean Paul</td>
+                        <td><strong>699</strong></td>
+                        <td>3</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>3</td>
+                        <td>3A</td>
+                        <td><a href="https://www.chess.com/member/jean-pauljll" target="_blank" class="btn-perfil">Perfil</a></td>
+                    </tr>
+                    <tr>
+                        <td class="jugador-nombre">Alfredo Fortunic</td>
+                        <td><strong>403</strong></td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>2</td>
+                        <td>3A</td>
+                        <td><a href="https://www.chess.com/member/alfreditoelmascapito" target="_blank" class="btn-perfil">Perfil</a></td>
+                    </tr>
+                    <tr>
+                        <td class="jugador-nombre">Nils Angeldonis</td>
+                        <td><strong>401</strong></td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>3E</td>
+                        <td><a href="https://www.chess.com/member/nils1714" target="_blank" class="btn-perfil">Perfil</a></td>
+                    </tr>
+                    <tr>
+                        <td class="jugador-nombre">Leonel Chiguán</td>
+                        <td><strong>357</strong></td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>3B</td>
+                        <td><a href="https://www.chess.com/member/leochig" target="_blank" class="btn-perfil">Perfil</a></td>
+                    </tr>
+                    <tr>
+                        <td class="jugador-nombre">Valentino Carrasco</td>
+                        <td><strong>277</strong></td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>3A</td>
+                        <td><a href="https://www.chess.com/member/pateatherians3000" target="_blank" class="btn-perfil">Perfil</a></td>
+                    </tr>
+                    <tr>
+                        <td class="jugador-nombre">Mirko Pezoa</td>
+                        <td><strong>273</strong></td>
+                        <td>0</td>
+                        <td>3</td>
+                        <td>0</td>
+                        <td>3</td>
+                        <td>3D</td>
+                        <td><a href="https://www.chess.com/member/mirkocamus" target="_blank" class="btn-perfil">Perfil</a></td>
+                    </tr>
+                    <tr>
+                        <td class="jugador-nombre">Jose Incio</td>
+                        <td><strong>264</strong></td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>1D</td>
+                        <td><a href="https://www.chess.com/member/josea2013" target="_blank" class="btn-perfil">Perfil</a></td>
+                    </tr>
+                    <tr>
+                        <td class="jugador-nombre">Ariana Chupillón</td>
+                        <td><strong>263</strong></td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>2</td>
+                        <td>3D</td>
+                        <td><a href="https://www.chess.com/member/rojiari" target="_blank" class="btn-perfil">Perfil</a></td>
+                    </tr>
+                    <tr>
+                        <td class="jugador-nombre">Miguel Reyna</td>
+                        <td><strong>261</strong></td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>3A</td>
+                        <td><a href="https://www.chess.com/member/m1gzcx_lp" target="_blank" class="btn-perfil">Perfil</a></td>
+                    </tr>
+                    <tr>
+                        <td class="jugador-nombre">Paolo Chávez</td>
+                        <td><strong>190</strong></td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>3A</td>
+                        <td><a href="https://www.chess.com/member/paolo1601" target="_blank" class="btn-perfil">Perfil</a></td>
+                    </tr>
+                    <tr>
+                        <td class="jugador-nombre">Nicól Cabezudo</td>
+                        <td><strong>103</strong></td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>3A</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td class="jugador-nombre">Luana Chuquilín</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>3D</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td class="jugador-nombre">Caetano Carranza</td>
+                        <td><em>(En clasificación)</em></td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>3C</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td class="jugador-nombre">Adrián Villegas</td>
+                        <td><em>(En clasificación)</em></td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>2A</td>
+                        <td>-</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Club de Ajedrez P.E.P. - Colegio Santo Domingo, el Apóstol</p>
+    </footer>
+
+</body>
+</html>

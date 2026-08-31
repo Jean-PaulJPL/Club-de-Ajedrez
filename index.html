@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P.E.P. - Inicio</title>
+    <style>
+        :root { 
+            --azul-principal: #004696; 
+            --azul-oscuro: #002d62; 
+            --blanco: #ffffff; 
+            --gris-claro: #f4f6f9; 
+        }
+
+        * { 
+            margin: 0; 
+            padding: 0; 
+            box-sizing: border-box; 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+        }
+
+        body { 
+            background-color: var(--gris-claro); 
+            color: #333; 
+            line-height: 1.6; 
+        }
+
+        header { 
+            background-color: var(--blanco); 
+            border-bottom: 3px solid var(--azul-principal); 
+            padding: 0.8rem 5%; 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            position: sticky; 
+            top: 0; 
+            z-index: 100; 
+        }
+
+        .logo-container { 
+            display: flex; 
+            align-items: center; 
+            gap: 12px; 
+        }
+
+        .logo-img { 
+            height: 50px; 
+            width: auto; 
+            object-fit: contain; 
+        }
+
+        nav a { 
+            color: var(--azul-oscuro); 
+            text-decoration: none; 
+            margin-left: 20px; 
+            font-weight: 600; 
+        }
+
+        nav a.active { 
+            color: var(--azul-principal); 
+            border-bottom: 2px solid var(--azul-principal); 
+        }
+
+        .banner-container {
+            width: 100%;
+            height: 320px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .banner-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .banner-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(rgba(0, 45, 98, 0.75), rgba(0, 70, 150, 0.75));
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: var(--blanco);
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .banner-overlay h1 {
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .banner-overlay p {
+            font-size: 1.2rem;
+            max-width: 650px;
+            opacity: 0.95;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+        }
+
+        .content {
+            max-width: 850px;
+            margin: 3rem auto;
+            padding: 0 20px;
+            min-height: calc(100vh - 520px);
+        }
+
+        .card {
+            background: var(--blanco);
+            padding: 2.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            text-align: center;
+        }
+
+        .card h2 {
+            color: var(--azul-principal);
+            margin-bottom: 1.2rem;
+            font-size: 2rem;
+        }
+
+        .card p {
+            margin-bottom: 1rem;
+            color: #444;
+            font-size: 1.05rem;
+        }
+
+        footer { 
+            text-align: center; 
+            padding: 1.5rem; 
+            background-color: var(--azul-oscuro); 
+            color: var(--blanco); 
+            font-size: 0.9rem; 
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+            <img src="logo-colegio.jpg" alt="Logo Club P.E.P." class="logo-img">
+            <h2>P.E.P.</h2>
+        </div>
+        <nav>
+            <a href="index.html" class="active">Inicio</a>
+            <a href="datos.html">Datos</a>
+            <a href="aperturas.html">Aperturas</a>
+            <a href="torneo.html">Torneo</a>
+            <a href="clasificacion.html">Clasificación</a>
+        </nav>
+    </header>
+
+    <div class="banner-container">
+        <img src="banner.jpg" alt="Clase de Ajedrez P.E.P." class="banner-img">
+        <div class="banner-overlay">
+            <h1>Club de Ajedrez P.E.P.</h1>
+            <p>Ajedrez de mentes optimistas: nueva generación con buena actitud por dominar el ajedrez.</p>
+        </div>
+    </div>
+
+    <div class="content">
+        <section class="card">
+            <h2>Bienvenido dominguino</h2>
+            <p>Te damos la bienvenida al espacio oficial de nuestro equipo. Aquí impulsamos la disciplina, la estrategia y el trabajo colaborativo de una nueva generación de ajedrecistas comprometidos con el aprendizaje continuo.</p>
+            <p>Explora nuestras secciones para revisar la visión institucional del club, repasar la guía táctica de aperturas para tus partidas y mantenerte al tanto de los próximos torneos interescolares.</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Club de Ajedrez P.E.P. - Colegio Santo Domingo, el Apóstol</p>
+    </footer>
+
+</body>
+</html>

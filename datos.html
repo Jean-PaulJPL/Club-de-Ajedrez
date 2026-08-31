@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P.E.P. - Datos</title>
+    <style>
+        :root { 
+            --azul-principal: #004696; 
+            --azul-oscuro: #002d62; 
+            --blanco: #ffffff; 
+            --gris-claro: #f4f6f9; 
+        }
+
+        * { 
+            margin: 0; 
+            padding: 0; 
+            box-sizing: border-box; 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+        }
+
+        body { 
+            background-color: var(--gris-claro); 
+            color: #333; 
+            line-height: 1.6; 
+        }
+
+        header { 
+            background-color: var(--blanco); 
+            border-bottom: 3px solid var(--azul-principal); 
+            padding: 0.8rem 5%; 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            position: sticky; 
+            top: 0; 
+            z-index: 100; 
+        }
+
+        .logo-container { 
+            display: flex; 
+            align-items: center; 
+            gap: 12px; 
+        }
+
+        .logo-img { 
+            height: 50px; 
+            width: auto; 
+            object-fit: contain; 
+        }
+
+        nav a { 
+            color: var(--azul-oscuro); 
+            text-decoration: none; 
+            margin-left: 20px; 
+            font-weight: 600; 
+        }
+
+        nav a.active { 
+            color: var(--azul-principal); 
+            border-bottom: 2px solid var(--azul-principal); 
+        }
+
+        .container { 
+            max-width: 850px; 
+            margin: 3rem auto; 
+            padding: 0 20px; 
+            min-height: calc(100vh - 230px); 
+        }
+
+        .card { 
+            background: var(--blanco); 
+            padding: 2.5rem; 
+            border-radius: 8px; 
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05); 
+            margin-bottom: 2rem;
+        }
+
+        .card h2 { 
+            color: var(--azul-principal); 
+            margin-bottom: 1.2rem; 
+            border-bottom: 2px solid var(--gris-claro); 
+            padding-bottom: 0.5rem; 
+        }
+
+        .datos-lista p {
+            margin-bottom: 0.8rem;
+            font-size: 1.05rem;
+        }
+
+        .historia-texto p {
+            margin-bottom: 1rem;
+            text-align: justify;
+            font-size: 1.05rem;
+            color: #444;
+        }
+
+        .firma-autor {
+            text-align: right;
+            font-weight: bold;
+            color: var(--azul-oscuro);
+            font-size: 1.1rem;
+            margin-top: 1.5rem;
+            font-style: italic;
+        }
+
+        footer { 
+            text-align: center; 
+            padding: 1.5rem; 
+            background-color: var(--azul-oscuro); 
+            color: var(--blanco); 
+            font-size: 0.9rem; 
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+            <img src="logo-colegio.jpg" alt="Logo Club P.E.P." class="logo-img">
+            <h2>P.E.P.</h2>
+        </div>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="datos.html" class="active">Datos</a>
+            <a href="aperturas.html">Aperturas</a>
+            <a href="torneo.html">Torneo</a>
+            <a href="clasificacion.html">Clasificación</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        
+        <section class="card datos-lista">
+            <h2>Datos del Club</h2>
+            <p><strong>Nombre del club:</strong> Peones en progresión (P.E.P.)</p>
+            <p><strong>Docente encargado:</strong> Lenin Josue Luna Santamaria</p>
+            <p><strong>Colegio:</strong> Santo Domingo, el Apóstol</p>
+            <p><strong>Lema:</strong> "Ajedrez de mentes optimistas: nueva generación con buena actitud por dominar el ajedrez."</p>
+        </section>
+
+        <section class="card historia-texto">
+            <h2>¿Por qué nació este club?</h2>
+            <p>La idea de crear el club nació en el increíble 3er año "A" (orgulloso por supuesto), cuando un tal Alfredo Fortunic me dijo para jugar una partida, y yo pues, simplemente acepté porque sabía algunos conceptos básicos, y pues, le gané las dos partidas que jugamos, y él al siguiente día quizo volver a jugar conmigo, y yo perdí las dos partidas. Entendí que no era el mejor, sino, hubiera ganado las 4 partidas, pero no fue así.</p>
+            
+            <p>Entonces, me creé una cuenta de Chess.com para comenzar a practicar, y él también, y comenzamos a jugar los dos, incluso creamos un torneo de Ajedrez en nuestro mismo salón, pero no era muy llamativo, obviamente habían algunas excepciones, pero no le interesaba al 90% del salón, así que seguí jugando, igual Alfredo, igual algunos compañeros más.</p>
+            
+            <p>Y pues, un día, se lo comenté al profesor al final de la clase del taller de Atletismo junto con una compañera, Luana Domenica Chuquilin de la Cuba, y el profesor nos aceptó la idea, entonces, seguí juntando personas, buscando a alumnos de todos los grados de secundaria para seguir haciendo crecer este grupo, y así, poco a poco fuimos ganando más nivel gracias a la práctica diaria.</p>
+
+            <p class="firma-autor">— Jean Paul Jhon Llerena</p>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Club de Ajedrez P.E.P. - Colegio Santo Domingo, el Apóstol</p>
+    </footer>
+
+</body>
+</html>

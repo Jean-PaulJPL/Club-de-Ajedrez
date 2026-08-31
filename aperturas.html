@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P.E.P. - Aperturas</title>
+    <style>
+        :root { 
+            --azul-principal: #004696; 
+            --azul-oscuro: #002d62; 
+            --blanco: #ffffff; 
+            --gris-claro: #f4f6f9; 
+        }
+
+        * { 
+            margin: 0; 
+            padding: 0; 
+            box-sizing: border-box; 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+        }
+
+        body { 
+            background-color: var(--gris-claro); 
+            color: #333; 
+            line-height: 1.6; 
+        }
+
+        header { 
+            background-color: var(--blanco); 
+            border-bottom: 3px solid var(--azul-principal); 
+            padding: 0.8rem 5%; 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            position: sticky; 
+            top: 0; 
+            z-index: 100; 
+        }
+
+        .logo-container { 
+            display: flex; 
+            align-items: center; 
+            gap: 12px; 
+        }
+
+        .logo-img { 
+            height: 50px; 
+            width: auto; 
+            object-fit: contain; 
+        }
+
+        nav a { 
+            color: var(--azul-oscuro); 
+            text-decoration: none; 
+            margin-left: 20px; 
+            font-weight: 600; 
+        }
+
+        nav a.active { 
+            color: var(--azul-principal); 
+            border-bottom: 2px solid var(--azul-principal); 
+        }
+
+        .container { 
+            max-width: 850px; 
+            margin: 3rem auto; 
+            padding: 0 20px; 
+            min-height: calc(100vh - 230px); 
+        }
+
+        .card { 
+            background: var(--blanco); 
+            padding: 2.5rem; 
+            border-radius: 8px; 
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05); 
+            margin-bottom: 2rem;
+        }
+
+        .card h2 { 
+            color: var(--azul-principal); 
+            margin-bottom: 1.2rem; 
+            border-bottom: 2px solid var(--gris-claro); 
+            padding-bottom: 0.5rem; 
+        }
+
+        footer { 
+            text-align: center; 
+            padding: 1.5rem; 
+            background-color: var(--azul-oscuro); 
+            color: var(--blanco); 
+            font-size: 0.9rem; 
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+            <img src="logo-colegio.jpg" alt="Logo Club P.E.P." class="logo-img">
+            <h2>P.E.P.</h2>
+        </div>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="datos.html">Datos</a>
+            <a href="aperturas.html" class="active">Aperturas</a>
+            <a href="torneo.html">Torneo</a>
+            <a href="clasificacion.html">Clasificación</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section class="card">
+            <h2>Aperturas de Entrenamiento</h2>
+            <p>Sección en desarrollo. Próximamente compartiremos aperturas y estrategias para el equipo.</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Club de Ajedrez P.E.P. - Colegio Santo Domingo, el Apóstol</p>
+    </footer>
+
+</body>
+</html>
